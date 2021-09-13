@@ -4,7 +4,7 @@ This is an Budget calculator application that is developed by Angular and It hel
 
 ## Demo
 
-![](https://i.imgur.com/dzh3Er5.gifv)
+<img src="https://i.imgur.com/dzh3Er5.gif" width="700" height="400" />
 
 ## Technologies Used
 
@@ -29,3 +29,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 
 
+## Thanks
