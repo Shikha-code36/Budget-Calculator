@@ -1,3 +1,10 @@
+# Budget-calculator app
+
+This is an Budget calculator application that is developed by Angular and It helps to Manage the budget.
+
+## Demo
+
+[](https://i.imgur.com/X1CMqQ5.gifv)
 
 ## Technologies Used
 
@@ -16,10 +23,6 @@ npm install
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
@@ -28,22 +31,3 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## More Updates
-
-Follow me on [LinkedIn](https://www.linkedin.com/in/manoj-m8497/) to get the latest update about features, code, and more. If you like this project give a star to this repo.
-
-## Thanks
-
-Thanks to all contributors and their support.
-
-If you have an idea or you want to do something, tell me or just do it!
-
-I'm always happy to hear your feedback!
-
-## Copyright and license
-
-Code and documentation copyright 2020 the authors. Code released under the [MIT License](https://github.com/Manojkumar8497/Budget-Calculator/blob/master/LICENSE).
