@@ -4,7 +4,7 @@ This is an Budget calculator application that is developed by Angular and It hel
 
 ## Demo
 
-[](https://i.imgur.com/X1CMqQ5.gifv)
+![](https://i.imgur.com/X1CMqQ5.gifv)
 
 ## Technologies Used
 
