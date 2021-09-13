@@ -1,0 +1,25 @@
+@import "../../main-style.scss";
+
+.income-column,
+.expense-column {
+  h1 {
+    font-family: "Lato";
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+}
+
+.income-column {
+    margin-right: 35px;
+  h1 {
+    color: $green;
+  }
+}
+
+.expense-column {
+  h1 {
+    color: $red;
+  }
+}

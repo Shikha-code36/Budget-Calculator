@@ -1,0 +1,30 @@
+<!-- Top bar section -->
+<section class="top-bar d-flex flex-row align-items-center p-3">
+    <h1 class="mr-auto">Budget Calculator</h1>
+    <button class="btn btn-success shadow" type="button" [disabled]="!budgetItems.length || isSaved"
+        (click)="saveToLocal()"><span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"
+            *ngIf="isSaved"></span>
+        <i class="far fa-save mr-2" *ngIf="!isSaved"></i>{{isSaved?' Saving...':'Save'}}</button>
+</section>
+
+<!-- Total Budget Section -->
+<section class="total-budget">
+    <h2 [ngClass]="totalBudget>=0?'green':'red'">{{totalBudget}}</h2>
+</section>
+
+<!-- Add Item Form Section -->
+<section class="add-item">
+    <div class="add-item-container">
+        <app-add-item-form style="padding: 20px;" (formSubmit)="addItem($event)"></app-add-item-form>
+    </div>
+</section>
+
+<hr class="mt-5">
+
+<!-- Budget Item list Section -->
+<section class="budget-item">
+    <div class="container">
+        <app-budget-item-list [budgetItems]="budgetItems" (deleteBudget)="deleteItem($event)"
+            (updatedBudget)="updateBudgetItem($event)"></app-budget-item-list>
+    </div>
+</section>

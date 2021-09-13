@@ -1,0 +1,30 @@
+<div class="row">
+    <!-- Income -->
+    <div class="col">
+        <div class="income-column">
+            <h1>Income</h1>
+            <div *ngIf="budgetItems.length">
+                <div *ngFor="let budgetItem of budgetItems; let i = index">
+                    <app-budget-item-card *ngIf="budgetItem.amount>=0" [isIncome]="isIncomeValue" [index]='i'
+                        [budgetItem]="budgetItem" (deleteClick)="deleteItem($event)"
+                        (updateItem)="updateBudget($event)">
+                    </app-budget-item-card>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <!-- Expense -->
+        <div class="expense-column">
+            <h1>Expense</h1>
+            <div *ngIf="budgetItems.length">
+                <div *ngFor="let budgetItem of budgetItems; let i = index">
+                    <app-budget-item-card *ngIf="budgetItem.amount<0" [isIncome]="!isIncomeValue" [index]='i'
+                        [budgetItem]="budgetItem" (deleteClick)="deleteItem($event)"
+                        (updateItem)="updateBudget($event)">
+                    </app-budget-item-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

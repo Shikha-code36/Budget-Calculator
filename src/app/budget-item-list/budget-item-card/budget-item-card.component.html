@@ -1,0 +1,36 @@
+<div class="card mt-3 shadow" *ngIf="budgetItem" (click)="cardClicked()">
+    <div class="budget-item" [ngClass]="isIncome ? 'income':'expense'">
+        <div class="list-group-item d-flex justify-content-between align-items-center">
+            {{budgetItem.description}}
+            <span class="badge badge-primary badge-pill">{{budgetItem.amount}}</span>
+        </div>
+    </div>
+    <div class="delete-icon">
+        <i class="fas fa-times-circle" (click)="deleteBudgetItem()"></i>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" [attr.data-target]="'#exampleModalCenter-' + index"
+    style="display: none;" #modalBtn>
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" [id]="'exampleModalCenter-'+index" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true" #modal>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body" *ngIf="isClicked">
+                <h3 class="title">Edit</h3>
+                <hr>
+                <div class="container">
+                    <app-add-item-form [item]="budgetItem" (formSubmit)="onSubmitted($event)">
+                    </app-add-item-form>
+                </div>
+            </div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" style="display: none;"
+                #closeBtn>Close</button>
+        </div>
+    </div>
+</div>

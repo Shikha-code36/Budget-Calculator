@@ -1,0 +1,59 @@
+@import "../../main-style.scss";
+
+// Top bar section
+.top-bar {
+  width: 100%;
+  height: 70px;
+  background-image: linear-gradient(75deg, #0984e3, #6c5ce7);
+  h1 {
+    font-family: "Lato";
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+  }
+}
+
+// Budget section
+.total-budget {
+  display: flex;
+  background: $dark-blue;
+  height: 15rem;
+  //   Center alignment
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 3rem;
+    color: white;
+    &.red {
+      color: lighten($color: $red, $amount: 5%);
+    }
+    &.green {
+      color: lighten($color: $green, $amount: 12%);
+    }
+  }
+}
+
+// Add Item section
+.add-item {
+  display: flex;
+  //   Center alignment
+  justify-content: center;
+  align-items: center;
+  .add-item-container {
+    width: 680px;
+    height: 2.5rem;
+  }
+}
+
+.budget-item {
+  padding: 50px;
+  .container {
+    max-width: 680px;
+    width: 100%;
+    height: 100%;
+  }
+}
